@@ -1,6 +1,10 @@
-import { saludar } from './js/componentes';
 import './styles.css';
+import { Todo, TodoList } from './classes/index'
 
-const nombre = 'Dani';
 
-saludar( nombre );
+
+const todoList = new TodoList();
+
+const tarea = new Todo('Aprender JS');
+
+console.log(tarea);

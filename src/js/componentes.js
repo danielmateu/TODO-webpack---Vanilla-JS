@@ -46,3 +46,22 @@ txtInput.addEventListener('keyup', (e) => {
         txtInput.value = '';
     }
 })
+
+divTodoList.addEventListener('click',(e) => {
+    // console.log('Click');
+    // console.log(e.target.localName);
+
+    const nombreElemento = e.target.localName; //input,label,button
+    const todoElemento = e.target.parentElement.parentElement; //input
+    const todoId = todoElemento.getAttribute('data-id');
+    // console.log(todoElemento);
+    // console.log(todoId);
+
+    if(nombreElemento.includes('input')){ //Click en el check
+        todoList.marcarCompletado(todoId);
+        todoElemento.classList.toggle('completed')
+    }
+
+    console.log(todoList);
+
+})

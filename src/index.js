@@ -3,14 +3,10 @@ import { Todo, TodoList } from './classes/index'
 import { crearTodoHtml } from './js/componentes';
 
 
-
 export const todoList = new TodoList();
 
-const tarea = new Todo('Aprender JS');
-// tarea.completado = true
+// todoList.todos.forEach(todo => crearTodoHtml(todo));
+todoList.todos.forEach(crearTodoHtml);
 
-todoList.nuevoTodo(tarea);
 
-// console.log(todoList);
-
-crearTodoHtml(tarea)
+// console.log('todos', todoList.todos);

@@ -1,3 +1,6 @@
+
+
+
 export class TodoList {
     constructor (){
         this.todos=[];
@@ -16,6 +19,6 @@ export class TodoList {
     }
 
     eliminarCompletados(){
-        
+
     }
 }

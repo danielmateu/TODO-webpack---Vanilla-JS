@@ -11,6 +11,6 @@ const tarea = new Todo('Aprender JS');
 
 todoList.nuevoTodo(tarea);
 
-console.log(todoList);
+// console.log(todoList);
 
 crearTodoHtml(tarea)
